@@ -316,6 +316,7 @@ body{
     cursor: pointer;
 }
 
+.menu-option-card.casual::after,
 .menu-option-card.ranked::after{
     display: none;
 }
