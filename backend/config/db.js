@@ -10,7 +10,7 @@ if (!URI) {
 
 const client = new MongoClient(URI, {
   serverSelectionTimeoutMS: 5000,
-  appName: "ClashChess",
+  appName: "3D Online Chess",
   retryWrites: true,
 });
 
