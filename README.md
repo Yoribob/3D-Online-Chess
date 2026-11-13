@@ -22,6 +22,11 @@
 ### Lobby
 <img width="1917" height="988" alt="image" src="https://github.com/user-attachments/assets/c77b7f2a-3de5-47cf-a33a-62a3a73d6c84" />
 
+### Different visual theme
+<img width="1398" height="855" alt="image" src="https://github.com/user-attachments/assets/00f442b2-7260-462c-87fa-a1f3b4d5456d" />
+
+
+
 ## Features
 - Interactive 3D chessboard: click a piece, then click a square to move
 - Free camera: rotate the board by dragging, zoom with the scroll wheel
