@@ -4,6 +4,7 @@ import { logout } from "../../auth/authAPI.js"
 import { BtnPressAnim } from "./shared.js";
 import { globalState } from "../../config/globalState.js";
 import { fetchWithAuth } from "../../utils/fetchWithAuth.js";
+import { API_ORIGIN } from "../../config/api.js";
 
 export async function handleProfileMenu() {
   const menu = document.querySelector(".menu");
@@ -142,10 +143,10 @@ export async function handleProfileMenu() {
       const formData = new FormData();
       formData.append("avatar", file);
 
-      const res = await fetch("/api/avatar", { method: "POST", credentials: "include", body: formData });
+      const res = await fetch(`${API_ORIGIN}/api/avatar`, { method: "POST", credentials: "include", body: formData });
       const data = await res.json();
       if (res.ok) {
-        avatarImg.src = `http://localhost:3000${data.avatarUrl}`;
+        avatarImg.src = `${API_ORIGIN}${data.avatarUrl}`;
         avatarChangeBtn.querySelector("span").textContent = "UPLOADED!";
       } else throw new Error(data.msg || "Upload failed");
     } catch (err) {
